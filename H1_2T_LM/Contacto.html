@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <nav>
+
+        <ul>
+        
+        <li><a href="index.html">Home</a></li>
+        
+        <li><a href="XML.html">XML</a></li>
+
+        <li><a href="JSON.html">JSON</a></li>
+        
+        <li><a href="Contacto.html">Contacto</a></li>
+
+        </ul>
+        
+    </nav>
+    <div class="contact_form">
+
+		<div class="formulario">			
+      <h1>Formulario de contacto</h1>
+				<h3>Escribeme y me pondré en contacto contigo</h3>
+
+
+					<form action="submeter-formulario.php" method="post">				
+
+						
+								<p>
+									<label for="nombre" class="colocar_nombre">Nombre/Empresa
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="text" name="introducir_nombre" id="nombre" required="obligatorio">
+								</p>
+							
+								<p>
+									<label for="sector" class="colocar_sector">Sector/Profesión
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="text" name="introducir_sector" id="sector" required="obligatorio">
+								</p>
+						
+								<p>
+									<label for="telefone" class="colocar_telefono">Teléfono
+									</label>
+										<input type="tel" name="introducir_telefono" id="telefono">
+								</p>		
+                                
+
+
+								<p>
+									<label for="email" class="colocar_email">Correo electrónico
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="email" name="introducir_correo" id="correo" required="obligatorio">
+								</p>		
+                                <p>
+                                    <label for="pais">País</label>
+                                    <select name="pais" id="pais">
+                                        <option value="españa">España</option>
+                                        <option value="portugal">Portugal</option>
+                                        <option value="francia">Francia</option>
+                                        <option value="inglaterra">Inglaterra</option>
+                                        <option value="alemania">Alemania</option>		
+                                </p>
+                                
+								<p>
+									<label for="mensaje" class="colocar_mensaje">Mensaje
+										<span class="obligatorio">*</span>
+									</label>                     
+                               		  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                               	</p>	  								
+							
+								<button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+								<p class="aviso">
+									<span class="obligatorio"> * </span>los campos son obligatorios.
+								</p>					
+						
+					</form>
+		</div>	
+	</div>
+	<footer>  
+        Campus FP Humanes 2023/2024
+    </footer>
+</body>
+</html>
